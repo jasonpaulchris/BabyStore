@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace BabyStore.Controllers
 {
@@ -13,9 +9,9 @@ namespace BabyStore.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult About(string Id)
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your application description page. You entered the ID " + Id;
 
             return View();
         }
